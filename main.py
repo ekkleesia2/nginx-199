@@ -5,7 +5,7 @@ import tornado.web
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        self.write(os.environ.get('saludo_')+'<br>'+os.environ.get('python_')+'<br>'+os.environ.get('curl_'))
+        self.write(os.environ.get('saludo_')+'<br>'+os.environ.get('python_')+'<br>'+os.environ.get('curl_')+'<br>'+os.environ.get('sed_')+'<br>PORT: '+os.environ.get("PORT", 5000))
 
 def main():
     application = tornado.web.Application([
