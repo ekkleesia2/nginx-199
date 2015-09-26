@@ -1,1 +1,1 @@
-web: /app/nginx/sbin/nginx
+web: sh run.sh
